@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: dialect
+  ai:
+    ollama:
+      base-url: http://host.docker.internal:11434
+      chat:
+        options:
+          model: llama3.2
+          temperature: 0.0
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dialect
+    username: postgres
+    password: password
